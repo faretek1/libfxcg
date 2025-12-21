@@ -105,7 +105,7 @@ jobs:
       - name: Download sources
         run: |
           curl -L https://downloads.sourceforge.net/project/libpng/zlib/1.2.11/zlib-1.2.11.tar.xz | tar xJ
-          curl -L https://downloads.sourceforge.net/project/libpng/libpng16/1.6.37/libpng-1.6.37.tar.xz | tar xJ
+          curl -L https://downloads.sourceforge.net/project/libpng/libpng16/1.6.53/libpng-1.6.53.tar.xz | tar xJ
           git clone https://gitlab.com/taricorp/mkg3a.git mkg3a-master
       - name: Compile
         env:
@@ -120,7 +120,7 @@ jobs:
                PREFIX=i686-w64-mingw32- \
                install -j$(nproc)
 
-          cd ../libpng-1.6.37
+          cd ../libpng-1.6.53
           cmake -DCMAKE_SYSTEM_NAME=Windows \
                 -DCMAKE_C_COMPILER=i686-w64-mingw32-gcc \
                 -DCMAKE_CXX_COMPILER=i686-w64-mingw32-g++ \
