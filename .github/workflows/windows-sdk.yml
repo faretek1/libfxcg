@@ -1,5 +1,5 @@
 name: Build Windows SDK package
-on: push
+on: workflow_dispatch
 
 jobs:
   build_toolchain:
